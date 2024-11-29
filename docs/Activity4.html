@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 
+<style> 
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00ADB5;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ADB5;
+}
+
+/* Content Styling for Sections */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    flex-grow: 1;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.profile-image img {
+    border-radius: 10px;
+    max-width: 700px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #888888;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #aaaaaa;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #ffffff; /* White background */
+    color: black; /* Button text color */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: green; /* When hovering, button background turns teal */
+    color: #ffffff; /* When hovering, text color turns white */
+}
+
+button a {
+    color: inherit; /* Ensure the link inside the button inherits the button's color */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+
+</style>
+<body>
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#home" id="home-link">Home</a></li>
+                <li><a href="#about" id="about-link">About</a></li>
+                <li><a href="#projects" id="projects-link">Projects</a></li>
+                <li><a href="#contact" id="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/evanne.saptang.39" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/evanne.saptang.39/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/evannesaptanggg" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </header>
+
+     <!-- Home Section -->
+     <section id="home">
+        <main>
+            <div class="content">
+                <h3>Hi, I'm Evanne Saptang</h3>
+                <h1>I'm a 3rd Year College Student</h1>
+                <p>A passionate 3rd-year college student</p>
+                <button id="viewProjectsBtn"><a href="#projects">View My Projects</a></button>
+            </div>
+            <div class="profile-image">
+                <img src="img/profile.jpg" alt="Profile Image">
+            </div>
+        </main>
+    </section>
